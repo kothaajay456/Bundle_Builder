@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bundle Builder</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h3 class="bundle-heading">Buy 3 and Save 30%</h3>
+
+  <section class="product-bundle">
+    <!-- Product Grid -->
+    <div class="grid-custom">
+      <div class="frame-4" id="product-grid"></div>
+    </div>
+
+    <!-- Sidebar -->
+    <aside class="sticky-element">
+      <div class="container">
+        <h2>Create a Bundle</h2>
+        <p>Add at least <strong>3</strong> products and <strong>Save 30%</strong>.</p>
+        <div class="progress-bundle-bar">
+          <div class="background" id="progress-bar"></div>
+        </div>
+      </div>
+
+      <div class="selected-products" id="selected-products"></div>
+
+      <div class="summary">
+        <div class="horizontal-border">
+          <span>Discount</span>
+          <span id="discount">- $0.00</span>
+        </div>
+        <div class="horizontal-border">
+          <span>Subtotal</span>
+          <span id="subtotal">$0.00</span>
+        </div>
+      </div>
+
+      <button id="cta-button" disabled>
+        <span class="btn-label">Add 3 Items to Cart</span>
+        <span class="btn-icon"><img src="assets/Icons/CaretRight.svg" alt=""></span>
+      </button>
+    </aside>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
